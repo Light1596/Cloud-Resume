@@ -25,5 +25,6 @@ I then created an A-record and aliased to cloudfront distribution. I chose the c
 The users could now access the resume using `lightsituma.buzz`
 
 ## Video section
-I used an old machine to make the video. There is a lot of fan noise noise in the background. Apologies for this, I work on it next time.
+I used an old machine to make the video. There is a lot of fan noise noise in the background. Apologies for this, I will work on it next time.
+![](Light1596/Cloud-Resume/0613.mp4)
 
