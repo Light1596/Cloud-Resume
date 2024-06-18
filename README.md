@@ -1,4 +1,4 @@
-# MILESTONE 1
+# CLOUD RESUME PROJECT
 ## CloudMyTribe First Challenge
 This challenge involved was about creating a cloud resume. The steps follwed were:
 
@@ -27,8 +27,6 @@ The users could now access the resume using `lightsituma.buzz`
 ## Video section
 I used an old machine to make the video. There is a lot of fan noise noise in the background. Apologies for this, I will work on it next time.
 
-[video](https://github.com/Light1596/Cloud-Resume/blob/main/0613.mp4) 
 [Project Walkthrough](https://drive.google.com/file/d/1b14P7NXy-ZoS9__dXrKrihzvnssnfY8R/view?usp=drive_link)
 
-View it raw.
 
