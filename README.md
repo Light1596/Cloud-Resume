@@ -30,6 +30,6 @@ I used an old machine to make the video. There is a lot of fan noise noise in th
 [Project Walkthrough](https://drive.google.com/file/d/1b14P7NXy-ZoS9__dXrKrihzvnssnfY8R/view?usp=drive_link)
 
 ## Acknowledgements
-The style.css and index.html templates were provides by Anne Andega
+The style.css and index.html templates were provides by [Anne Andega](https://www.linkedin.com/in/anne-andega?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD4okqgBAYePr9vokcGJsQsEXFI-ciETjY4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BWssziKLWRmev0GietXddww%3D%3D)
 
 
