@@ -13,10 +13,27 @@ The goal was to create a static cloud resume website.
 
 ### S3 
 
-1. Creation of an s3 bucket. I enabled public access and proceeded to attach a policy with an action to allow `GetObject` and the principle as `*`. This allows the public to access the objects in the s3 bucket. I gave the bucket a name similar to my domain name because I realised that giving it a different name from the domain name used in creating a hosted zone in Route 53 results in a `No Resources Found` error. In my case the name given to the bucket was `lightsituma.buzz`.
-2. Upload of the objects into the bucket. Shout out to Anne Andega for the `index.html` and `style.css` templates. I modified them to suit my needs. I uploaded the two files together with `profile_photo.jpeg`.
-3. Enable the bucket for static website hosting. Under `properties`tab of the bucket, I enabled static website hosting. It is disabled by default. I specified the home or default file as the `index.html`. This name has to be the same name of the index file you uploaded.
-4. Upon completion of this step, the bucket becomes a website endpoint and a url is provided that can be used to access the objects in the bucket via http
+1. Create an s3 bucket and enable public access. Proceed to attach the policy below
+    ```{
+  "Id": "Policy1718745369258",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1718745362146",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::${BucketName}/",
+      "Principal": "*"
+    }
+  ]
+}
+
+    ```
+This allows the public to access the objects in the s3 bucket. Replace the `${BucketName}` with the name of your bucket. Be sure to use this same name when creating a hosted zone in Route 53. This will prevent the `No Resources Found` when creating an alias.
+2. Upload the objects into the bucket.
+3. Enable the bucket for static website hosting. This is done under `properties` tab of the bucket. It is disabled by default. Specify the home or default file as the `index.html`. This name has to be the same name of the index file you uploaded. The bucket becomes a website endpoint. The url provided can be used to access the objects in the bucket via http
 
 ### CloudFront Distribution
 I used the s3 bucket as the origin, redirected http to https, provided an SSL certificate that had been issued by the <mark>AWS Certificate Manager</mark>(You need a domain name for this), provided an alternate domain name(This is important when created an A record in Route 53. The alias will reference this domain you provided else `No Resources Found` will pop up when creating the record). I enabled WAF, left the rest of the settings at default and proceeded to create a distribution
