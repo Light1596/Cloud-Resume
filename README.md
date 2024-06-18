@@ -14,7 +14,8 @@ The goal was to create a static cloud resume website.
 ### S3 
 
 1. Create an s3 bucket and enable public access. Proceed to attach the policy below
-    ```{
+    ```
+    {
   "Id": "Policy1718745369258",
   "Version": "2012-10-17",
   "Statement": [
@@ -32,7 +33,9 @@ The goal was to create a static cloud resume website.
 
     ```
 This allows the public to access the objects in the s3 bucket. Replace the `${BucketName}` with the name of your bucket. Be sure to use this same name when creating a hosted zone in Route 53. This will prevent the `No Resources Found` when creating an alias.
+
 2. Upload the objects into the bucket.
+   
 3. Enable the bucket for static website hosting. This is done under `properties` tab of the bucket. It is disabled by default. Specify the home or default file as the `index.html`. This name has to be the same name of the index file you uploaded. The bucket becomes a website endpoint. The url provided can be used to access the objects in the bucket via http
 
 ### CloudFront Distribution
