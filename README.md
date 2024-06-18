@@ -37,6 +37,10 @@ This allows the public to access the objects in the s3 bucket. Replace the `${Bu
    
 3. Enable the bucket for static website hosting. This is done under `properties` tab of the bucket. It is disabled by default. Specify the home or default file as the `index.html`. This name has to be the same name of the index file you uploaded. The bucket becomes a website endpoint. The url provided can be used to access the objects in the bucket via http
 
+### AWS Certificate Manager
+An SSL certificate is needed to redirect http to https.
++ Provide a fully qualified domain name then request for a certificate. You can purchase a domain name from [here](https://www.hostafrica.ke/)
+  
 ### CloudFront Distribution
 I used the s3 bucket as the origin, redirected http to https, provided an SSL certificate that had been issued by the <mark>AWS Certificate Manager</mark>(You need a domain name for this), provided an alternate domain name(This is important when created an A record in Route 53. The alias will reference this domain you provided else `No Resources Found` will pop up when creating the record). I enabled WAF, left the rest of the settings at default and proceeded to create a distribution
 
