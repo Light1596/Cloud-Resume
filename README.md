@@ -1,6 +1,6 @@
 # CLOUD RESUME PROJECT
 
-## Introduction
+## About the Project
 The goal was to create a static cloud resume website.
 
 ## Architecture Diagram
