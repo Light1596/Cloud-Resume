@@ -24,6 +24,9 @@ To use Route 53, I needed a domain name. So I bought one from hostAfrica `lights
 I then created an A-record and aliased to cloudfront distribution. I chose the cloudfront distribution I had created above and mapped it to the root domain name. Provision of a subdomain is optional.
 
 The users could now access the resume using `lightsituma.buzz`
+## Authors
+[Linkedin](www.linkedin.com/in/light-situma-35b522166)
+<lightsituma@gmail.com>
 
 ## Future Features
 + Implement CI/CD Pipeline using GitHub Actions
