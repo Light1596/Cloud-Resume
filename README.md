@@ -24,9 +24,12 @@ I then created an A-record and aliased to cloudfront distribution. I chose the c
 
 The users could now access the resume using `lightsituma.buzz`
 
-## Video section
+## Project Walkthrough
 I used an old machine to make the video. There is a lot of fan noise noise in the background. Apologies for this, I will work on it next time.
 
 [Project Walkthrough](https://drive.google.com/file/d/1b14P7NXy-ZoS9__dXrKrihzvnssnfY8R/view?usp=drive_link)
+
+## Acknowledgements
+The style.css and index.html templates were provides by Anne Andega
 
 
