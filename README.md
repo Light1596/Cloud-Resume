@@ -6,9 +6,12 @@ The goal was to create a static cloud resume website.
 ## Architecture Diagram
 ![Hosting a Static website architecture diagram - Page 3 (1)](https://github.com/Light1596/Cloud-Resume/assets/127042301/c137287a-3230-4563-97a2-0d99cd6a5389)
 
+## Pre-requisites
++ An active AWS account
 
+## Steps
 
-### S3 Part
+### S3 
 
 1. Creation of an s3 bucket. I enabled public access and proceeded to attach a policy with an action to allow `GetObject` and the principle as `*`. This allows the public to access the objects in the s3 bucket. I gave the bucket a name similar to my domain name because I realised that giving it a different name from the domain name used in creating a hosted zone in Route 53 results in a `No Resources Found` error. In my case the name given to the bucket was `lightsituma.buzz`.
 2. Upload of the objects into the bucket. Shout out to Anne Andega for the `index.html` and `style.css` templates. I modified them to suit my needs. I uploaded the two files together with `profile_photo.jpeg`.
@@ -38,6 +41,6 @@ I used an old machine to make the video. There is a lot of fan noise noise in th
 [Project Walkthrough](https://drive.google.com/file/d/1b14P7NXy-ZoS9__dXrKrihzvnssnfY8R/view?usp=drive_link)
 
 ## Acknowledgements
-The style.css and index.html templates were provides by [Anne Andega](https://www.linkedin.com/in/anne-andega?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD4okqgBAYePr9vokcGJsQsEXFI-ciETjY4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BWssziKLWRmev0GietXddww%3D%3D)
+I am grateful to [Anne Andega](https://www.linkedin.com/in/anne-andega?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD4okqgBAYePr9vokcGJsQsEXFI-ciETjY4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BWssziKLWRmev0GietXddww%3D%3D) for the syle.css and index.html templates
 
 
