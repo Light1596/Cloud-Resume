@@ -4,7 +4,7 @@
 The goal was to create a static cloud resume website.
 
 ## Architecture Diagram
-![Hosting a Static website architecture diagram - Page 3](https://github.com/Light1596/Cloud-Resume/assets/127042301/02fc6591-6a65-45e0-94f2-b8e29e902716)
+![Hosting a Static website architecture diagram - Page 3 (1)](https://github.com/Light1596/Cloud-Resume/assets/127042301/c137287a-3230-4563-97a2-0d99cd6a5389)
 
 
 
