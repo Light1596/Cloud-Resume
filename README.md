@@ -25,6 +25,9 @@ I then created an A-record and aliased to cloudfront distribution. I chose the c
 
 The users could now access the resume using `lightsituma.buzz`
 
+## Future Features
++ Implement CI/CD Pipeline using GitHub Actions
+
 ## Project Walkthrough
 I used an old machine to make the video. There is a lot of fan noise noise in the background. Apologies for this, I will work on it next time.
 
