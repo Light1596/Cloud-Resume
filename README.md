@@ -1,5 +1,10 @@
 # CLOUD RESUME PROJECT
-## ABOUT THE PROJECT
+
+## Table Of Contents
+1. [Introduction](## Introduction)
+2. [Architecture Diagram](## Architecture Diagram)
+
+## Introduction
 The goal was to create a static cloud resume website.
 
 ## Architecture Diagram
