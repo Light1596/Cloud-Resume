@@ -14,24 +14,23 @@ The goal was to create a static cloud resume website.
 ### S3 
 
 1. Create an s3 bucket and enable public access. Proceed to attach the policy below
-            ```
-            {
-          "Id": "Policy1718745369258",
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Sid": "Stmt1718745362146",
-              "Action": [
-                "s3:GetObject"
-              ],
-              "Effect": "Allow",
-              "Resource": "arn:aws:s3:::${BucketName}/",
-              "Principal": "*"
-            }
-          ]
-        }
-
-    ```
+```
+{
+"Id": "Policy1718745369258",
+"Version": "2012-10-17",
+"Statement": [
+{
+  "Sid": "Stmt1718745362146",
+  "Action": [
+    "s3:GetObject"
+  ],
+  "Effect": "Allow",
+  "Resource": "arn:aws:s3:::${BucketName}/",
+  "Principal": "*"
+}
+]
+}
+```
 This allows the public to access the objects in the s3 bucket. Replace the `${BucketName}` with the name of your bucket. Be sure to use this same name when creating a hosted zone in Route 53. This will prevent the `No Resources Found` when creating an alias.
 
 2. Upload the objects into the bucket.
