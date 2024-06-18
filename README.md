@@ -26,6 +26,7 @@ I then created an A-record and aliased to cloudfront distribution. I chose the c
 The users could now access the resume using `lightsituma.buzz`
 ## Authors
 [Linkedin](www.linkedin.com/in/light-situma-35b522166)
+
 <lightsituma@gmail.com>
 
 ## Future Features
