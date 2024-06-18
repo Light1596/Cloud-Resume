@@ -3,7 +3,7 @@
 This challenge involved was about creating a cloud resume. The steps follwed were:
 
 ## Architecture Diagram
-![Hosting a Static website architecture diagram - Page 3 (1)](https://github.com/Light1596/Cloud-Resume/assets/127042301/993f8c56-d8cb-4a3a-9e86-fa906b660dbe)
+![Hosting a Static website architecture diagram - Page 3](https://github.com/Light1596/Cloud-Resume/assets/127042301/02fc6591-6a65-45e0-94f2-b8e29e902716)
 
 
 
